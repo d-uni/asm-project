@@ -6,4 +6,4 @@ main.o: main.c
 functions.o: functions.asm
      nasm -f elf32 -o functions.o functions.asm
 clean:
-    rm -rf *.o prog
+     rm -rf *.o prog
