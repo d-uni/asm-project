@@ -64,8 +64,8 @@ double  root(double (*f)(double),double (*f1)(double), double (*g)(double), doub
     double x=(b+a)/2,h=1;
     while(fabs(h) > (eps1)/2)
     {
-        h=(f(x)-g(x))/(f1(x)-g1(x));
-        x=x-h;
+        h=f(x)-g(x);
+        x=x-h/(f1(x)-g1(x));
         i++;
     }
      return x;
