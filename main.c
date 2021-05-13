@@ -170,7 +170,7 @@ int main(int a, char **b)
         printf(" Число итераций f2=f3 : %u\n ",i);
 
     }
-    double root3 = root(f1, f11, f2, f21, -0.5, 0, 1e-5 );
+    double root3 = root(f1, f11, f3, f31, -0.5, 0, 1e-5 );
     if(fi){
         printf(" Число итераций f1=f3 : %u\n ",i);
 
